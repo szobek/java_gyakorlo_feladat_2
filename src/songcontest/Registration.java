@@ -39,7 +39,7 @@ public class Registration {
             String[] playerData = all.split(DELIMITER);
             authors[i] = new Author(playerData[0], playerData[1], i + 1);
         }
-        writeAuthors();
+
 
     }
 
