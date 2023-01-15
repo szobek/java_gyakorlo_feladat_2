@@ -1,4 +1,5 @@
-import olimpic.Registration;
+package olimpic;
+
 
 import java.util.Random;
 

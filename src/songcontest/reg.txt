@@ -1,0 +1,5 @@
+Kis Gyula|bölcsész
+Nagy Klaudia|Matematika tanár
+John Doe|Matematika tanár
+Kovács Antónia|Filozófia
+Szabó György|Informatikus
