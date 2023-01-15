@@ -1,6 +1,6 @@
 package songcontest;
 
-public class Author {
+public class Author implements Comparable<Author>{
     private String name;
     private String major;
     private int startNumber;
@@ -31,5 +31,10 @@ public class Author {
 
     public void setPoint(int point) {
         this.point = point;
+    }
+
+    @Override
+    public int compareTo(Author author) {
+        return author.getPoint()-point;
     }
 }
