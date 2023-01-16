@@ -1,13 +1,11 @@
 package songcontest;
 
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Random;
+import java.util.*;
 
 public class SongContest {
-        Registration registration = new Registration();
+    Registration registration = new Registration();
+
     public void start() {
         registration.writeAuthors();
         for (int i = 0; i < registration.authors.length; i++) {
@@ -18,20 +16,52 @@ public class SongContest {
         registration.writeAuthors();
         System.out.println("----------------------------------------------------------------");
         Author winner = searchWinner();
-        System.out.println("a nyertes: "+winner.getName()+" (" +winner.getPoint()+")");
-        System.out.println("----------------------------------------------------------------");
+        System.out.println("a nyertes: " + winner.getName() + " (" + winner.getPoint() + ")");
+        System.out.println("--------------------csökkenó sorrend--------------------------------------------");
         Arrays.sort(registration.authors);
         registration.writeAuthors();
+        try {
+            Thread.sleep(2000L);
+            searchAuthorByMajor();
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
     }
-    public Author searchWinner(){
-        Author winner=null;
-        int max=0;
-        for (Author author: registration.authors){
-            if(author.getPoint()>max){
-                max=author.getPoint();
-                winner=author;
+
+    private Author searchWinner() {
+        Author winner = null;
+        int max = 0;
+        for (Author author : registration.authors) {
+            if (author.getPoint() > max) {
+                max = author.getPoint();
+                winner = author;
             }
         }
         return winner;
+    }
+
+    private void searchAuthorByMajor() {
+        ArrayList<Author> list = new ArrayList<>();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Adja meg a kifejezést: ");
+            String text = scanner.nextLine();
+            for (Author author : registration.authors) {
+                if (author.getMajor().equals(text)) {
+                    list.add(author);
+                }
+            }
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+        }
+        if(list.size()>0){
+            System.out.println();
+        for(Author a : list){
+            System.out.println(a.getName()+" | "+a.getMajor());
+        }
+        }else {
+            System.out.println();
+            System.out.println("nincs találat");
+        }
     }
 }

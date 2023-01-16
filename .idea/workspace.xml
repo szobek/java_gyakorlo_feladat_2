@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70784790-0dce-4e2e-8571-02e2c1aa84c7" name="Changes" comment="songcontest game search winner and write">
+    <list default="true" id="70784790-0dce-4e2e-8571-02e2c1aa84c7" name="Changes" comment="songcontest game sort by point">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/songcontest/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/songcontest/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/songcontest/SongContest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/songcontest/SongContest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673810049689</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="songcontest game sort by point">
+      <created>1673811166600</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673811166600</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +120,7 @@
     <MESSAGE value="create songcontest game and Registration" />
     <MESSAGE value="songcontest game add points to authors" />
     <MESSAGE value="songcontest game search winner and write" />
-    <option name="LAST_COMMIT_MESSAGE" value="songcontest game search winner and write" />
+    <MESSAGE value="songcontest game sort by point" />
+    <option name="LAST_COMMIT_MESSAGE" value="songcontest game sort by point" />
   </component>
 </project>
