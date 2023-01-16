@@ -2,52 +2,56 @@ package football;
 
 public class Player {
     private String name;
+    private int playNum;
     private int regNum;
 
     private int goal;
     private boolean play;
-    private int match;
-    private int salary;
-    private Long training;
-    private final int baseSalary=200_000;
 
-    public Player(String name, int regNum) {
+
+    public Player(String name, int playNum, int regNum) {
         this.name = name;
         this.regNum = regNum;
-
-        match=0;
-        training=0L;
+        this.playNum = playNum;
     }
 
-    public void edz(int workoutTime){
-        training+=workoutTime+1000;
+    public String getName() {
+        return name;
     }
 
-    public void playGame(){
-        if(play)
-            match++;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void countSalary(){
-        salary=baseSalary+(goal*10_000)+((training.intValue()/1000)*2000);
+    public int getPlayNum() {
+        return playNum;
     }
 
-    public void setGoal(boolean kick) {
-        if(kick)
-            goal++;
+    public void setPlayNum(int playNum) {
+        this.playNum = playNum;
+    }
+
+    public int getRegNum() {
+        return regNum;
+    }
+
+    public void setRegNum(int regNum) {
+        this.regNum = regNum;
+    }
+
+    public int getGoal() {
+        return goal;
+    }
+
+    public void setGoal(int goal) {
+        this.goal = goal;
+    }
+
+    public boolean isPlay() {
+        return play;
     }
 
     public void setPlay(boolean play) {
         this.play = play;
     }
-
-    public void setMatch(int match) {
-        this.match = match;
-    }
-
-    public int getSalary() {
-        countSalary();
-        return salary;
-    }
-
 }

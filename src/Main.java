@@ -1,3 +1,4 @@
+import football.Football;
 import olimpic.Game;
 import songcontest.SongContest;
 
@@ -9,6 +10,7 @@ public class Main {
 
     private void run() {
 //        new Game().start(); // olimpia
-        new SongContest().start();
+//        new SongContest().start();
+        new Football().start();
     }
 }
