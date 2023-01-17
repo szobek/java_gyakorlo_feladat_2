@@ -8,6 +8,8 @@ public class Player {
     private int goal=0;
     private boolean play;
 
+    private int baseSalary=200_000;
+
     private int training=0;
 
     public Player(String name, int playNum, int regNum) {
