@@ -8,6 +8,7 @@ public class Player {
     private int goal;
     private boolean play;
 
+    private int training=0;
 
     public Player(String name, int playNum, int regNum) {
         this.name = name;
@@ -54,4 +55,8 @@ public class Player {
     public void setPlay(boolean play) {
         this.play = play;
     }
+    public void edz(int trainingPlayer){
+        training+=trainingPlayer;
+    }
+
 }

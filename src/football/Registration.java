@@ -41,7 +41,7 @@ public class Registration {
             players[i] = new Player(playerData[0], Integer.parseInt(playerData[1]), i + 1);
         }
 for (Player player:players){
-    System.out.println(player.getName());
+    System.out.println(player.getName() );
 }
 
     }
