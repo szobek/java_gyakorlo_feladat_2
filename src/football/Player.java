@@ -58,6 +58,11 @@ public class Player {
     public void edz(int trainingPlayer){
         training+=trainingPlayer;
     }
+
+    /**
+     * Ha játszik, akkor növelhetem a gól számot
+     *
+      **/
     public void goltRug(){
         if(play){
             goal++;
