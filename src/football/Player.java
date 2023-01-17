@@ -5,7 +5,7 @@ public class Player {
     private int playNum;
     private int regNum;
 
-    private int goal;
+    private int goal=0;
     private boolean play;
 
     private int training=0;
@@ -58,5 +58,9 @@ public class Player {
     public void edz(int trainingPlayer){
         training+=trainingPlayer;
     }
-
+    public void goltRug(){
+        if(play){
+            goal++;
+        }
+    }
 }
