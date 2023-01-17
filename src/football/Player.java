@@ -8,7 +8,7 @@ public class Player {
     private int goal=0;
     private boolean play;
 
-    private int baseSalary=200_000;
+    private final int baseSalary=200_000;
 
     private int training=0;
 
@@ -46,8 +46,8 @@ public class Player {
         return goal;
     }
 
-    public void setGoal(int goal) {
-        this.goal = goal;
+    public void setGoal() {
+        this.goal++;
     }
 
     public boolean isPlay() {
@@ -69,5 +69,8 @@ public class Player {
         if(play){
             goal++;
         }
+    }
+    public int countSalary(){
+        return baseSalary+(training*520)+(goal*20_000);
     }
 }

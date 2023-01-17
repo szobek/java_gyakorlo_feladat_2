@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70784790-0dce-4e2e-8571-02e2c1aa84c7" name="Changes" comment="football game goltRug fn">
+    <list default="true" id="70784790-0dce-4e2e-8571-02e2c1aa84c7" name="Changes" comment="football game baseSalary init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/football/Football.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/football/Football.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/football/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/football/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673947878724</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="football game goltRug fn write comment">
+      <created>1673948108054</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673948108054</updated>
+    </task>
+    <task id="LOCAL-00012" summary="football game baseSalary init">
+      <created>1673948249593</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673948249593</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +168,8 @@
     <MESSAGE value="football game Registration" />
     <MESSAGE value="football game edz fn" />
     <MESSAGE value="football game goltRug fn" />
-    <option name="LAST_COMMIT_MESSAGE" value="football game goltRug fn" />
+    <MESSAGE value="football game goltRug fn write comment" />
+    <MESSAGE value="football game baseSalary init" />
+    <option name="LAST_COMMIT_MESSAGE" value="football game baseSalary init" />
   </component>
 </project>
